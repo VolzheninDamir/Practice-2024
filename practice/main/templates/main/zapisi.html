@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'main/img/LOGO_CARWASH.ico' %}" type="image/x-icon">
+    <title>Записи</title>
+    <link rel="stylesheet" href="{% static 'main/css/zapisi.css' %}">
+</head>
+<body style="background-image: url('{% static 'main/img/background1.jpeg' %}');">
+    <header>
+        <div class="header">
+            <img src="{% static 'main/img/logo.png' %}" alt="Логотип" class="logo">
+        </div>
+    </header>
+    <div class="button-container">
+        <button id="change-button" class="change-button"><a href="/zapisi/zapisi_change/">Редактировать</a></button>
+        <button id="back-button" class="back-button"><a href="/">Отмена</a></button>
+    </div>
+    <h1 class="zapisi-title">Записи</h1>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

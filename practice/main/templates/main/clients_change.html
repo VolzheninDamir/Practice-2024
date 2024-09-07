@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'main/img/LOGO_CARWASH.ico' %}" type="image/x-icon">
+    <title>Редактирование клиентов</title>
+    <link rel="stylesheet" href="{% static 'main/css/clients_change.css' %}"> </head>
+<body style="background-image: url('{% static 'main/img/background1.jpeg' %}');">
+    <header>
+        <div class="header">
+            <img src="{% static 'main/img/logo.png' %}" alt="Логотип" class="logo">
+        </div>
+    </header>
+    <div class="button-container">
+        <button id="save-button" class="save-button">Сохранить</button>
+        <button id="back-button" class="back-button"><a href="/clients/">Отмена</a></button>
+    </div>
+    <h1 class="clients-title">Редактирование клиентов</h1>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>
